@@ -1,0 +1,123 @@
+
+body {
+    font-family: sans-serif;
+    font-size: 1em;
+    margin: 0;
+}
+
+header {
+    font-size: 4em;
+    text-align: center;
+    margin: 15px;
+}
+
+#container {
+    width: 400px;
+    border: #000 3px solid;
+    margin: 15px auto;
+}
+
+#displayDiv {
+    font-family: 'Work Sans', sans-serif;
+    height: 80px;
+    background-color: #fcfdfd;
+    font-size: 3em;
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    color: #000;
+    border: #000 1px solid;
+    box-sizing: border-box;
+}
+
+#keysDiv {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: #FCFDFD;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    font-size: 2em;
+    color: #000;
+    box-sizing: border-box;
+}
+
+.numberbtn:hover {
+    background-color: rgb(170, 170, 170);
+}
+
+#kDot:hover, #kBackspace:hover, #kC:hover {
+    background-color: rgb(170, 170, 170);
+}
+
+
+#keysDiv:hover {
+    cursor: pointer;
+}
+
+.operatorBtn {
+    color: #000000;
+    background-color: #FCFDFD;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+.buttonClick {
+    box-shadow: inset 10px 10px 10px rgb(0,0,0);
+}
+
+.operatorClick {
+    background-color: rgb(170, 170, 170);
+}
+
+.operatorBtn:hover {
+    background-color: rgb(170, 170, 170);
+}
+
+#keysDiv div {
+    border: #000 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#kEquals {
+    grid-area: 5/3/6/5;
+    background-color: #94926d;
+    color: #FCFDFD;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+#kEquals {
+    grid-area: 5/3/6/5;
+    background-color: #94926d;
+    color: #FCFDFD;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+#kEquals:hover {
+    background-color: #75734cde;
+}
+
+@media (max-width: 370px) {
+    #keysDiv {
+        width: 300px;
+        height: 300px;
+    }
+    #container {
+        width: 300px;
+        margin: 15px auto 0px;
+    }
+    #displayDiv {
+        width: 300px;
+ 
+    }
+    header {
+    font-size: 3em;
+    }
+   
+}
